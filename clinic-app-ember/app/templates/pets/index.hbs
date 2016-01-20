@@ -1,0 +1,29 @@
+<div class="col-md-7">
+    <ul>
+        <li>
+            {{#link-to 'pets.add'}}Add a new pet{{/link-to}}
+        </li>
+    </ul>
+    <div class="table-responsive">
+      <table class="table">
+          <thead>
+              <tr>
+                  <td>  ID </td>
+                  <td>  Pet name </td>
+                  <td>  Owner name/phone </td>
+                  <td>  Actions  </td>
+              </tr>
+          </thead>
+          <tbody>
+              {{#each model as |pet|}}
+                <tr>
+                    <td> {{pet.id}} </td>
+                    <td> {{#link-to 'pets.view' pet}} {{pet.name}}  {{/link-to}}</td>
+                    <td> {{pet.ownerName}} / {{pet.ownerPhone}} </td>
+                    <td> <a href="#">Edit</a> | <a href="#">Delete</a> </td>
+                </tr>
+              {{/each}}
+          </tbody>
+      </table>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+<div class="col-md-7">
+        <div class="info">
+                <h4>You are browsing <b>{{model.name}}'s file</b></h4>
+                <ul>
+                    <li>Name: <b>{{model.name}}</b></li>
+                    <li>Owner name: <b>{{model.ownerName}}</b></li>
+                    <li>Owner phone: <b>{{model.ownerPhone}}</b></li>
+                </ul>
+                <h4><b>{{model.name}}</b> visits history</h4>
+                <ul>
+                    {{#each model.visits as |visit|}}
+                        <li>Visited on 23 december 2015. Result: <b>{{visit.result}}</b></li>
+                    {{/each}}
+                </ul>
+        </div>
+</div>

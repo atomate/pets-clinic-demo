@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ClinicApp</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>    <style media="screen">
+        * {
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+
+        .clinic-header{
+            padding-top: 10px;
+            margin-top: 10px;
+            text-transform: uppercase;
+        }
+
+        table{
+            margin-top: 30px;
+        }
+
+        thead{
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        #addPetForm{
+            margin-top: 20px;
+        }
+
+        .form-label{
+            margin-top: 10px;
+        }
+
+    </style>
+
+    {{content-for 'head'}}
+
+    <link rel="stylesheet" href="assets/vendor.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" charset="utf-8">
+    <link rel="stylesheet" href="assets/clinic-app.css">
+
+    {{content-for 'head-footer'}}
+  </head>
+  <body>
+    {{content-for 'body'}}
+
+    <script src="assets/vendor.js"></script>
+    <script src="assets/clinic-app.js"></script>
+
+    {{content-for 'body-footer'}}
+  </body>
+</html>
